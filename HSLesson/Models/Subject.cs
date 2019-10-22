@@ -6,7 +6,7 @@ namespace HSLesson.Models
     public class Subject : Entity
     {
         public string SubjectName { get; set; }
-        public Mentor Mentor { get; set; }
-        public ICollection<Student> Students { get; set; } = new List<Student>();
+        public virtual Mentor Mentor { get; set; }
+        public virtual ICollection<SubjectsStudents> Students { get; set; } = new List<SubjectsStudents>();
     }
 }

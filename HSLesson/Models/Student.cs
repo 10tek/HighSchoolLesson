@@ -8,6 +8,6 @@ namespace HSLesson.Models
     {
         public string FullName { get; set; }
         public string GroupName { get; set; }
-        public ICollection<Subject> Subjects { get; set; } = new List<Subject>();
+        public virtual ICollection<SubjectsStudents> Subjects { get; set; } = new List<SubjectsStudents>();
     }
 }

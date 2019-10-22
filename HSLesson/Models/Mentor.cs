@@ -6,6 +6,6 @@ namespace HSLesson.Models
     {
         public string FullName { get; set; }
         public int Stage { get; set; }
-        public ICollection<Subject> Subjects { get; set; } = new List<Subject>();
+        public virtual ICollection<Subject> Subjects { get; set; } = new List<Subject>();
     }
 }
